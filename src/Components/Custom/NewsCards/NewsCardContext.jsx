@@ -14,16 +14,9 @@ const NewsCardContent = ({ headline, hours, children }) => {
           <Heading level="3" margin="none">
             {headline}
           </Heading>
-          <Text color="dark-5" size="small">
+          <Text color="dark-1" size="xlarge">
             &#8226; {hours}
           </Text>
-        </Box>
-        <Box
-          round="xsmall"
-          pad={{ vertical: "xxsmall", horizontal: "medium" }}
-          background={"dark-2"}
-        >
-          <Text size="xsmall">NEW</Text>
         </Box>
       </Box>
       {children}

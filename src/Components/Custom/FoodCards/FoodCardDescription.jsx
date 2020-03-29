@@ -9,7 +9,7 @@ const CardDescription = ({ description }) => (
     justify="between"
     pad={{ left: "small", vertical: "small" }}
   >
-    <Text size="small" color="dark-5" margin={{ vertical: "small" }} truncate>
+    <Text size="mediu" color="dark-1" margin={{ vertical: "small" }} truncate>
       {description}
     </Text>
   </Box>

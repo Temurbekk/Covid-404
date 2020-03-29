@@ -7,20 +7,20 @@ const CardContent = ({ name, category, hours, phone, children }) => {
       <Box
         margin={{ top: "small" }}
         direction="row"
-        align="center"
+        align="start"
         justify="between"
       >
-        <Box>
+        <Box align="start">
           <Heading level="3" margin="none">
             {name}
           </Heading>
-          <Text color="dark-5" size="small">
+          <Text color="dark-1" size="xlarge">
             &#8226; {category}
           </Text>
-          <Text color="dark-5" size="small">
+          <Text color="dark-1" size="medium">
             &#8226; {phone}
           </Text>
-          <Text color="dark-5" size="small">
+          <Text color="dark-1" size="xlarge">
             &#8226; {hours}
           </Text>
         </Box>

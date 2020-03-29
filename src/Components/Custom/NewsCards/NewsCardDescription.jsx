@@ -5,11 +5,11 @@ const NewsCardDescription = ({ description }) => (
   <Box
     tag="description"
     direction="row"
-    align="center"
+    align="start"
     justify="between"
     pad={{ left: "small", vertical: "small" }}
   >
-    <Text size="medium" color="dark-5" margin={{ vertical: "small" }} truncate>
+    <Text size="large" color="dark-1" margin={{ vertical: "small" }}>
       {description}
     </Text>
   </Box>
