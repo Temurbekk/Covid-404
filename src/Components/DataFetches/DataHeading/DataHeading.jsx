@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Text, Box, WorldMap, ResponsiveContext } from "grommet";
+import { Text, WorldMap, ResponsiveContext } from "grommet";
 import Section from "../../shared/Section";
 import { useQuery } from "react-query";
 import { fetchAll } from "../shared/API";
@@ -19,25 +19,21 @@ const DataHeading = () => {
 
   return (
     <Section>
-      <Box align="center" justify="start" pad="med">
-        <Text
-          size={size === "small" ? "43px" : "77px"}
-          color={fadeIn && data ? "" : "status-critical"}
-        >
+      <div>
+        <h1 className="title is-1">
           {fadeIn && data ? data.cases : "Too Many"} <span>Cases</span>
-        </Text>
-        <Text
-          size={size === "small" ? "43px" : "77px"}
-          color={fadeIn && data ? "status-critical" : ""}
-        >
+        </h1>
+        <h1 className="title is-1" style={{ color: "orange" }}>
+          {fadeIn && data ? data.recovered : "Not Enough"}
+          <span> Recovered</span>
+        </h1>
+        <h1 className="title is-2" style={{ color: "grey" }}>
           {fadeIn && data ? data.deaths : "Too Many"} <span>Deaths</span>
-        </Text>
-      </Box>
-      <Box margin="medium" pad="med">
-        {size === "small" || (
-          <WorldMap color={fadeIn && data ? "status-critical" : ""} />
-        )}
-      </Box>
+        </h1>
+      </div>
+      <div>
+        {size === "small" || <WorldMap color={fadeIn && data ? "red" : ""} />}
+      </div>
     </Section>
   );
 };
