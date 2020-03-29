@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Text, WorldMap, ResponsiveContext } from "grommet";
-import Section from "../../shared/Section";
+import { WorldMap, ResponsiveContext } from "grommet";
+import Section from "../../Utility/Section";
 import { useQuery } from "react-query";
 import { fetchAll } from "../shared/API";
 
@@ -23,11 +23,11 @@ const DataHeading = () => {
         <h1 className="title is-1">
           {fadeIn && data ? data.cases : "Too Many"} <span>Cases</span>
         </h1>
-        <h1 className="title is-1" style={{ color: "orange" }}>
+        <h1 className="title is-2" style={{ color: "green" }}>
           {fadeIn && data ? data.recovered : "Not Enough"}
           <span> Recovered</span>
         </h1>
-        <h1 className="title is-2" style={{ color: "grey" }}>
+        <h1 className="title is-3" style={{ color: "grey" }}>
           {fadeIn && data ? data.deaths : "Too Many"} <span>Deaths</span>
         </h1>
       </div>

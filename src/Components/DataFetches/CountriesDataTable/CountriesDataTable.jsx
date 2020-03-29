@@ -3,7 +3,7 @@ import { Heading } from "grommet";
 import { useQuery } from "react-query";
 
 import { fetchCountries } from "../shared/API";
-import Section from "../../shared/Section";
+import Section from "../../Utility/Section";
 import DataTable from "../shared/DataTable";
 
 const CountriesDataTable = () => {
@@ -14,7 +14,7 @@ const CountriesDataTable = () => {
 
   return (
     <Section>
-      <Heading alignSelf="center">Countries</Heading>
+      <Heading alignSelf="center">World Wide</Heading>
       {status === "loading" ? (
         <h1>Is Loading...</h1>
       ) : status === "error" ? (

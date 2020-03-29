@@ -3,14 +3,14 @@ import { Box, DataTable as GrommetDataTable } from "grommet";
 import getColumns from "./GetColumns";
 
 const DataTable = ({ data, location, caseTotal, deathTotal }) => {
-  const [newDataArr, setDataArr] = useState([]);
+  const [DataArr, setDataArr] = useState([]);
   const { columns } = getColumns(location);
 
-  const nArr = data.map(n => ({
-    ...n,
+  const nArr = data.map(numbers => ({
+    ...numbers,
     location,
-    caseRatio: (n.cases / caseTotal) * 100,
-    deathRatio: (n.deaths / deathTotal) * 100
+    caseRatio: (numbers.cases / caseTotal) * 100,
+    deathRatio: (numbers.deaths / deathTotal) * 100
   }));
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const DataTable = ({ data, location, caseTotal, deathTotal }) => {
 
   return (
     <Box align="center" pad="large">
-      <GrommetDataTable columns={columns} data={newDataArr} size="medium" />
+      <GrommetDataTable columns={columns} data={DataArr} size="medium" />
     </Box>
   );
 };
