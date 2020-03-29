@@ -11,6 +11,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "bulma": "^0.8.1",
+    "gh-pages": "^2.2.0",
     "grommet": "^2.11.3",
     "grommet-controls": "^2.0.4",
     "node-sass": "^4.13.1",
@@ -22,7 +23,10 @@
     "react-scripts": "3.4.1",
     "styled-components": "^5.0.1"
   },
+  "homepage": "https://Temurbekk.github.io/covid-404",
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
