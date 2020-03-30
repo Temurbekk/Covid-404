@@ -17,11 +17,11 @@ const CardContent = ({ name, category, hours, phone, children }) => {
           <Text color="dark-1" size="xlarge">
             &#8226; {category}
           </Text>
-          <Text color="dark-1" size="medium">
-            &#8226; {phone}
-          </Text>
           <Text color="dark-1" size="xlarge">
             &#8226; {hours}
+          </Text>
+          <Text color="dark-1" size="medium">
+            &#8226; {phone}
           </Text>
         </Box>
         <Box

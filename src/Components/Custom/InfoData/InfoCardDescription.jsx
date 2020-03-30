@@ -4,12 +4,12 @@ import { Box, Text } from "grommet";
 const CardDescription = ({ description }) => (
   <Box
     tag="description"
+    width="xxlarge"
+    round="small"
     direction="row"
     align="center"
-    justify="between"
-    pad={{ left: "small", vertical: "small" }}
   >
-    <Text size="medium" color="dark-1" margin={{ vertical: "small" }} truncate>
+    <Text size="xlarge" color="dark-1" margin={{ vertical: "small" }}>
       {description}
     </Text>
   </Box>

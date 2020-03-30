@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Box, Grid, ResponsiveContext } from "grommet";
+import { Box, Grid } from "grommet";
 import data from "../../../mocksData/NewsMockData";
 import NewsCard from "../../Custom/NewsCards/NewsCard";
 import NewsCardContent from "../../Custom/NewsCards/NewsCardContext";

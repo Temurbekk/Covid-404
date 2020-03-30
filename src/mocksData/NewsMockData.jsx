@@ -20,7 +20,7 @@ const data = [
     headline: "COVID-19 Attacks NYC",
     image:
       "https://s.abcnews.com/images/International/coronavirus-11-new-york-city-ap-jc-200325_hpMain_16x9_992.jpg",
-    hours: "Yesteday",
+    hours: "Yesterday",
     description:
       "Big incident was found in New York City. A woman traveling from overseas was found infected by the virus and now the whole city is endangered"
   },
