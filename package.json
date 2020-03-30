@@ -29,7 +29,6 @@
     "styled-components": "^5.0.1",
     "yup": "^0.28.3"
   },
-  "homepage": "https://Temurbekk.github.io/covid-404",
   "scripts": {
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
